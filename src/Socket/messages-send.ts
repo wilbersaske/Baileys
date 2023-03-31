@@ -504,6 +504,22 @@ export const makeMessagesSocket = (config: SocketConfig) => {
 					logger.debug({ jid }, 'adding device identity')
 				}
 
+    const buttonType = getButtonType(message)
+    				if(buttonType){
+    					(stanza.content as BinaryNode[]).push({
+    						tag: 'biz',
+    						attrs: { },
+    						content: [
+    							{
+    								tag: buttonType,
+    								attrs: getButtonArgs(message),
+    							}
+    						]
+    					})
+    
+    					logger.debug({ jid }, 'adding business node')
+    				}
+
 				logger.debug({ msgId }, `sending message to ${participants.length} devices`)
 
 				await sendNode(stanza)

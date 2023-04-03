@@ -1,7 +1,10 @@
 # Baileys - Typescript/Javascript WhatsApp Web API
  ------
- - Baileys con Botones arreglados excepto los botones de templateButtons, además los mensajes de lista solo están disponibles en chats privados.
- - Baileys with Buttons fixed except for the template buttons, plus the list messages are only available in private chats.
+ - Baileys con Botones arreglados excepto los botones de templateButtons, además los mensajes de lista solo están disponibles en chats privados. Igual se corrigieron mensajes de error en la consola (solo visual).
+ 
+ - Baileys with Buttons fixed except for templateButtons, also list messages are only available in private chats. Also fixed error messages in the console (visual only).
+ 
+ - Baileys dengan Buttons diperbaiki kecuali templateButtons, plus pesan daftar hanya tersedia di obrolan pribadi. Pesan kesalahan yang sama diperbaiki di konsol (hanya visual).
  ------
  Baileys does not require Selenium or any other browser to be interface with WhatsApp Web, it does so directly using a **WebSocket**. Not running Selenium or Chromimum saves you like **half a gig** of ram :/ 
 
